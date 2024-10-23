@@ -8,12 +8,11 @@ function App() {
 
   const push = () => {
     const newValue = generateRandomNumber();
-    console.log("Adding new value:", newValue);
     setValue((prev) => [...prev, newValue]);
   };
 
   function generateRandomNumber() {
-    return Math.floor(Math.random() * 101);
+    return Math.floor(Math.random() * 1001);
   }
 
   return (
